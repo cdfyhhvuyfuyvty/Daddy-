@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daddy的小狗专属</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daddy的小狗专属💖</h1>
+
+        <div class="section">
+            <h2>🐶 每日一句</h2>
+            <p id="dailyWords">加载中...</p>
+        </div>
+
+        <div class="section">
+            <h2>💖 小狗积分：<span id="points">0</span></h2>
+            <button onclick="earnPoints(5)">完成任务 +5积分</button>
+            <button onclick="earnPoints(-2)">偷懒 -2积分</button>
+        </div>
+
+        <div class="section">
+            <h2>🎨 20x20 画板</h2>
+            <canvas id="pixelCanvas" width="20" height="20"></canvas>
+            <button onclick="clearCanvas()">清空画布</button>
+        </div>
+
+        <div class="section">
+            <h2>🎮 小狗的粉色便签机</h2>
+            <div class="notepad">
+                <div class="screen">
+                    <textarea id="notepad" placeholder="写下你的便签..."></textarea>
+                </div>
+                <div class="buttons">
+                    <button onclick="saveNote()">💾 保存</button>
+                    <button onclick="clearNote()">🗑 清空</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎵 音乐播放器</h2>
+            <audio controls>
+                <source src="music.mp3" type="audio/mpeg">
+                你的浏览器不支持音频播放
+            </audio>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
